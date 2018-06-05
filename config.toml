@@ -2,7 +2,6 @@
 baseurl = "en.q6a.com.au/"
 title = "Multilingual Websites - Your Website in Any Language"
 languageCode = "en"
-publishDir = "../docs"
 
 googleAnalytics     = "UA-115780836-1"
 
