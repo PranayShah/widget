@@ -1,0 +1,16 @@
+{
+  "enable": true,
+  "map": true,
+  "title": "Contact Us",
+  "description": "We are a technology/media firm, working out of <a href=\"https://fishburners.org/\" target=\"_blank\">Fishburners</a>, at the <a href=\"https://sydneystartuphub.com/\" target=\"_blank\">Sydney Startup Hub</a>. Thinking about trying our services? Talk to us today!",
+  "name": "Name",
+  "email": "Email",
+  "message": "Talk to us - your website, and what language would you like it in? Can we help you in a different way?",
+  "button": "Send",
+  "next": "/thanks",
+  "details": [
+    ["icon-home", "QBL Media, Sydney Startup Hub (Fishburners), <br/>Level 2, 11-31 York Street, Sydney, 2000"],
+    ["icon-envelope", "<a href=\"mailto:hello@q6a.com.au\">hello@q6a.com.au</a>"],
+    ["icon-globe", "<a href=\"http://www.q6a.com.au/\" target=\"_blank\">www.q6a.com.au</a>"]
+  ]
+}

@@ -1,0 +1,32 @@
+<section id="pricing" class="pricing" data-section="pricing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-heading text-center">
+        <h2 class="to-animate">{{ with .Site.Data.home.pricing.title }}{{ . | markdownify }}{{ end }}</h2>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 subtext to-animate">
+            <h3>{{ with .Site.Data.home.pricing.description }}{{ . | markdownify }}{{ end }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row eq-height-row">
+      {{ range .Site.Data.home.pricing.item }}
+      <div class="col-md-4 eq-box">
+        <div class="fh5co-person text-center to-animate price">
+          <figure><span class="short-letter">{{ .shortLetter | markdownify }}</span> <span class="full-letter">{{ .fullLetter | markdownify }}</span></figure>
+          <h3>{{ .title | markdownify }}</h3>
+          <span class="fh5co-position">{{ .subTitle | markdownify }}</span>
+          <p>{{ .description | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <div class="row">
+      <div class="col-md-12 subtext to-animate">
+        <br/>
+        <p>{{ with .Site.Data.home.pricing.spread }}{{ . | markdownify }}{{ end }}</p>
+      </div>
+    </div>
+</div>
+</section>

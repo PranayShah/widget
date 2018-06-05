@@ -1,0 +1,29 @@
+{
+  "title": "Pricing",
+  "description": "You already have a website for your English speaking customers. How many other cultures would you like to reach?",
+  "spread": "*Note: Spread (&delta;) is calculated as a percentage of translation costs. Translation costs operate on a pass through model, so 'Bring Your Own' works both standalone and as part of a workflow.",
+  "enable": true,
+  "item": [
+    {
+      "title": "Trial: 1 language(s)",
+      "subTitle": "$49/month + &delta;*",
+      "description": "Ready to explore a new market? Perfect for a pilot, or a business with a small footprint looking to increase awareness.",
+      "shortLetter": "T",
+      "fullLetter": "Trial"
+    },
+    {
+      "title": "Starter: 1+ language(s)",
+      "subTitle": "$399/month + &delta;*",
+      "description": "Current customers who speak another language? Are they a bigger part of your business these days?",
+      "shortLetter": "S",
+      "fullLetter": "Starter"
+    },
+    {
+      "title": "Professional: 3+ languages",
+      "subTitle": "$999/month + &delta;*",
+      "description": "Exporter? Looking to cater to Tourists? Proactively reach out to clients from elsewhere.",
+      "shortLetter": "P",
+      "fullLetter": "Professional"
+    }
+  ]
+}

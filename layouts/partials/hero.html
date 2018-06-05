@@ -1,0 +1,142 @@
+<section id="home" class="home" data-section="home" style="background-image: url(images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
+  <div class="gradient"></div>
+  <div class="container">
+    <div class="text-wrap">
+      <div class="text-inner">
+        <div class="row">
+          <div class="col-md-12">
+
+            <!-- Carousel -->
+            <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                {{ range $index, $element :=  $.Site.Data.home.herocarousel.item }}
+                <li data-target="#carousel-generic" data-slide-to="{{ $index }}" class="{{ if (eq $index 0) }}active{{ end }}"></li>
+                {{ end }}
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                {{ range $index, $value :=  $.Site.Data.home.herocarousel.item }}
+                <div class="item {{ if (eq $index 0) }}active{{ end }}">
+                  <!-- Static Header -->
+                  <div class="header-text">
+                    <div class="col-md-12 text-center">
+                      <h1 class="to-animate">{{ .title }}</h1>
+                      <h2 class="to-animate">{{ .subTitle }}</h2>
+                      {{ if .CTA }}
+                      <div class="mt20">
+                        <a href="#myModal{{$index}}" role="button" class="btn btn-primary" data-toggle="modal">{{ .CTA }}</a>
+                      </div>
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+                {{ end }}
+              </div>
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slant"></div>
+</section>
+
+
+<!-- Modal HTML 1 -->
+<div id="myModal0" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title"> {{$.Site.Data.home.hero.modal0.modalTitle}}</h4>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-12 ">
+          <div class="language-view">
+            {{ range $index, $value :=  $.Site.Data.home.hero.modal0.item }}
+            <a class="box" href="{{.langlink}}" target="_blank">
+              <strong>{{ .lantitle }}</strong>
+              <p>{{ .desc }}</p>
+            </a>
+            {{end}}
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal HTML 2-->
+<div id="myModal1" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form method="post" action="https://formspree.io/{{ with .Site.Params.meta.email }}{{.}}{{ end }}">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">{{$.Site.Data.home.hero.modal1.modalTitle}}</h4>
+        </div>
+        <div class="modal-body">
+          <div class="col-md-12 ">
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal HTML 3 -->
+<div id="myModal2" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form method="post" action="https://formspree.io/{{ with .Site.Params.meta.email }}{{.}}{{ end }}">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">{{$.Site.Data.home.hero.modal2.modalTitle}}</h4>
+        </div>
+        <div class="modal-body">
+          <div class="col-md-12 ">
+            <div class="form-group">
+              <input type="hidden" name="_next" value="{{ .Site.Data.home.contact.next }}" />
+            </div>
+            {{ range $index, $value :=  $.Site.Data.home.hero.modal2.formField }}
+
+            <div class="form-group ">
+              <label for="{{ .inputField }}" class="sr-only">{{ .inputField }}</label>
+              {{ if .message }}
+              <textarea id="{{ .inputField }}" class="form-control" name="{{ .inputField }}" placeholder="{{ .message }}" cols="30" rows="5" required></textarea>
+
+              {{else }}
+              <input id="{{ .inputField }}" class="form-control" name="{{ .inputField }}" placeholder="{{ .inputField }}" type="text" required >
+
+              {{end}}
+            </div>
+            {{end}}
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <input class="btn btn-primary" value="Submit" type="submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

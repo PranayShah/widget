@@ -1,0 +1,47 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" .}}
+  <body>
+    <header id="fh5co-header">
+      <div class="container">
+        <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <!-- Mobile Toggle Menu Button -->
+            <a
+              href="#"
+              class="js-fh5co-nav-toggle fh5co-nav-toggle"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar"
+            ><i></i></a>
+            <a class="navbar-brand" href="index.html">{{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }}</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="fh5co-home" class="home" data-section="404" style="background-image: url(images/full_image_2.jpg); height:660px; max-height:1000px;" data-stellar-background-ratio="0.5" >
+      <div class="gradient"></div>
+      <div class="container">
+        <div class="text-wrap">
+          <div class="text-inner">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <h1 class="to-animate">{{ .Site.Data.notFound.title }}</h1>
+                <h2 class="to-animate">{{ .Site.Data.notFound.description }}</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slant"></div>
+    </section>
+
+    {{ partial "js.html" .}}
+  </body>
+</html>

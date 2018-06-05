@@ -1,0 +1,27 @@
+{
+  "title": "Services",
+  "description": "Where will your clients come from tomorrow?",
+  "enable": true,
+  "item": [
+    {
+      "title": "Strategy",
+      "description": "Optimised for mobile, search and social, a website to reach clients who think in a language other than English. An anchor for your business, just in another language.",
+      "icon": "icon-anchor"
+    },
+    {
+      "title": "Interface",
+      "description": "Don't worry about software security, or updating your software. No exorbitant hosting costs, or slow load times. Get relevant information to your customers, just in a language they understand.",
+      "icon": "icon-layers2"
+    },
+    {
+      "title": "Rich Content",
+      "description": "Embed rich, contextual content, targeted at a whole new client base. Wherever your clients are from, provide them with value, that they can talk about, and share.",
+      "icon": "icon-video2"
+    },
+    {
+      "title": "Workflow",
+      "description": "Your client speaks a different language, how do you deliver a consistent level of service? Talk to us about positive and negative workflows, and how we deliver all the time, every time.",
+      "icon": "icon-monitor"
+    }
+  ]
+}

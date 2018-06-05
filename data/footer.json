@@ -1,0 +1,16 @@
+{
+  "enable": true,
+  "copyright": "&copy; QBL Media 2018.<br/>All Rights Reserved.",
+  "legal": {
+    "title": "Legal",
+    "url": "legal"
+  },
+  "sitemap": {
+    "title": "Sitemap",
+    "url": "sitemap.xml"
+  },
+  "login": {
+    "title": "Login",
+    "url": " "
+  }
+}

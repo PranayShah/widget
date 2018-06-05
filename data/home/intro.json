@@ -1,0 +1,28 @@
+{
+  "item": [
+    {
+      "title": "Vision",
+      "description": "Engage with clients who speak a primary language other than English. Manufacturer or services exporter looking for new export markets, or maybe a tourism concern?",
+      "url": "#solutions",
+      "button": "Solutions",
+      "icon": "icon-bulb",
+      "img": "img_8.jpg"
+    },
+    {
+      "title": "Execution",
+      "description": "Guidelines for what is useful, how to think about multilingual assets, and how to reuse and recycle digital assets to drive return on investment.",
+      "url": "#heuristics",
+      "button": "Heuristics",
+      "icon": "icon-wrench",
+      "img": "img_7.jpg"
+    },
+    {
+      "title": "Deployment",
+      "description": "Explore new markets on the cheap, and use your existing investments in social strategy to reach prospects that your competition cannot service.",
+      "url": "#services",
+      "button": "Services",
+      "icon": "icon-rocket",
+      "img": "img_10.jpg"
+    }
+  ]
+}

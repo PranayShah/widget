@@ -1,0 +1,15 @@
+{
+  "modalTitle": "Sign Up",
+  "formField": [
+    {
+      "inputField": "Name"
+    },
+    {
+      "inputField": "Email"
+    },
+    {
+      "message": "Talk to us - your website link, and what language(s) would you like it converted to? Can we help you in a different way?",
+      "inputField": "message"
+    }
+  ]
+}

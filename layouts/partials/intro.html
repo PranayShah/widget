@@ -1,0 +1,18 @@
+<section id="fh5co-intro">
+  <div class="container">
+    <div class="row row-bottom-padded-lg eq-col-he">
+      {{ range $.Site.Data.home.intro.item }}
+      <div class="fh5co-block to-animate" style="background-image: url(images/{{ .img }});">
+        <div class="overlay-darker"></div>
+        <div class="overlay"></div>
+        <div class="fh5co-text">
+          <i class="fh5co-intro-icon {{ .icon }}"></i>
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
+        </div>
+        <p class="btn-bottom"><a href="{{ .Site.BaseURL }}{{ .url }}" class="btn btn-primary">{{ .button }}</a></p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

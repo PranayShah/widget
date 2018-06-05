@@ -1,0 +1,53 @@
+<section id="solutions" class="solutions" data-section="solutions">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-heading text-center">
+        <h2 class="to-animate"> {{ with .Site.Data.home.solutions.title }}{{ . | markdownify }}{{ end }}</h2>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 subtext to-animate">
+            <h3>{{ with .Site.Data.home.solutions.description }}{{ . | markdownify }}{{ end }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-bottom-padded-sm eq-height-row">
+      {{ range $index, $element := .Site.Data.home.solutions.item  }}
+      <div class="col-md-4 col-sm-6 col-xs-12 eq-box">
+        <a href="#popup{{ $index }}" class="fh5co-project-item open-popup-link to-animate">
+          <img src="images/{{ .img }}" alt="{{ .alt }}" class="img-responsive">
+          <div class="fh5co-text">
+            <h2>{{ .title }}</h2>
+            <span>{{ .listcontent }}</span>
+          </div>
+        </a>
+      </div>
+      <!-- Popup itself-->
+      <div id="popup{{ $index }}" class="modal-dialog mfp-hide solution-modal">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h4 class="modal-title">{{ .title }}</h4>
+            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+          </div>
+
+          <div class="modal-body">
+            <figure>
+              <img src="images/{{ .img }}" alt="{{ .alt }}" class="img-responsive" >
+              <figcaption>{{ with .subtitle }}{{ . | markdownify }}{{ end }}</figcaption>
+            </figure>
+            <!-- <p style="margin-bottom:20px;">
+              <em>
+                {{ with .subtitle }}{{ . | markdownify }}{{ end }}
+              </em>
+            </p> -->
+            {{ with .listcontent }}{{ . | markdownify }}{{ end }}
+            {{ with .bullet }}{{ . | markdownify }}{{ end }}
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix visible-sm-block"></div>
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+{
+  "title": "Solutions",
+  "description": "Who are you, and who are you looking to reach?",
+  "enable": true,
+  "item": [
+    {
+      "title": "Manufacturing",
+      "subtitle": "Caption: Engraving of Victorian craftsmen blowing glass at Whitefrairs Glass Works, 18th Century.",
+      "img": "manufacturing.jpg",
+      "alt": "Caption: Engraving of Victorian craftsmen blowing glass at Whitefrairs Glass Works, 18th Century.",
+      "listcontent": "A tradition of fine craftsmanship - this is your heritage. The export markets of the 21st century - how will your modern craftsmen reach them?",
+      "bullet": ""
+    },
+    {
+      "title": "Services",
+      "subtitle": "Caption: Engraving of a Victorian classroom, with a boy in a dunce's cap standing behind the blackboard, Leisure Hour, 1872.",
+      "img": "services.jpg",
+      "alt": "Caption: Engraving of a Victorian classroom, with a boy in a dunce's cap standing behind the blackboard, Leisure Hour, 1872.",
+      "listcontent": "Educators have moved on from corporal punishments and dunce caps. Do your students understand what you are saying, and have you really moved on?",
+      "bullet": ""
+    },
+    {
+      "title": "Tourism",
+      "subtitle": "Caption: Illustration of men travelling by train in Victorian India; from 'Rip Van Winkle's Travels in Africa & Asia'; published by Thomas Crowell & Co., New York, 1882.",
+      "img": "tourism.jpg",
+      "alt": "Caption: Illustration of men travelling by train in Victorian India; from 'Rip Van Winkle's Travels in Africa & Asia'; published by Thomas Crowell & Co., New York, 1882.",
+      "listcontent": "Your customers are from a different place, and if they don't think in the same language as you, a different linguistic reality. What are their expectations?",
+      "bullet": ""
+    }
+  ]
+}

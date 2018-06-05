@@ -1,0 +1,56 @@
+<header id="fh5co-header" class="{{ if eq .Type "external" }} nav-fix-top {{ end }}">
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <!-- Mobile Toggle Menu Button -->
+        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+        <a class="navbar-brand" href="/" data-nav-section="home">{{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }}</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="{{ if not .IsHome }} {{ else }} active {{ end }}">
+            <a {{ if not .IsHome }} class="external" {{ end }} href="/" data-nav-section="home">
+              <span>{{ with .Site.Params.navigation.home }}{{ . | markdownify }}{{ end }}</span>
+            </a>
+          </li>
+
+          {{ if .Site.Data.home.solutions.enable }}
+            <li>
+              <a {{ if not .IsHome  }} class="external" {{ end }} href="/#solutions" data-nav-section="solutions">
+                <span>{{ with .Site.Params.navigation.solutions }}{{ . | markdownify }}{{ end }}</span>
+              </a>
+            </li>
+          {{ end }}
+          {{ if .Site.Data.home.heuristics.enable }}
+            <li>
+              <a {{ if not .IsHome }} class="external" {{ end }}  href="/#heuristics" data-nav-section="heuristics">
+                <span>{{ with .Site.Params.navigation.heuristics }}{{ . | markdownify }}{{ end }}</span>
+              </a>
+            </li>
+          {{ end }}
+          {{ if .Site.Data.home.services.enable }}
+            <li>
+              <a {{ if not .IsHome }} class="external" {{ end }} href="/#services" data-nav-section="services">
+                <span>{{ with .Site.Params.navigation.services }}{{ . | markdownify }}{{ end }}</span>
+              </a>
+            </li>
+          {{ end }}
+          {{ if .Site.Data.home.pricing.enable }}
+            <li>
+              <a {{ if not .IsHome }} class="external" {{ end }}  href="/#pricing" data-nav-section="pricing">
+                <span>{{ with .Site.Params.navigation.pricing }}{{ . | markdownify }}{{ end }}</span>
+              </a>
+            </li>
+          {{ end }}
+          {{ if .Site.Data.home.contact.enable }}
+            <li>
+              <a {{ if not .IsHome }} class="external" {{ end }} href="/#contact" data-nav-section="contact">
+                <span>{{ with .Site.Params.navigation.contact }}{{ . | markdownify }}{{ end }} </span>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>

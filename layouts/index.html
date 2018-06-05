@@ -1,0 +1,46 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" .}}
+  <body>
+    {{ partial "nav.html" .}}
+    {{ partial "hero.html" .}}
+    {{ partial "intro.html" .}}
+
+	  {{ if .Site.Data.home.solutions.enable }}
+      {{ partial "solutions.html" .}}
+    {{ end }}
+
+	  {{ if .Site.Data.home.heuristics.enable }}
+      {{ partial "heuristics.html" .}}
+    {{ end }}
+
+	  {{ if .Site.Data.home.services.enable }}
+      {{ partial "services.html" .}}
+    {{ end }}
+
+    {{ if .Site.Data.home.pricing.enable }}
+      {{ partial "pricing.html" .}}
+    {{ end }}
+	
+	
+      {{ partial "attributions.html" .}}
+   
+	
+	
+	
+	
+    {{ if .Site.Data.home.contact.enable }}
+      {{ partial "contact.html" .}}
+    {{ end }}
+
+    {{ if .Site.Params.footer.enable }}
+      {{ partial "footer.html" .}}
+    {{ end }}
+
+    {{ partial "js.html" .}}
+  </body>
+</html>

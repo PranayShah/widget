@@ -1,0 +1,28 @@
+# Page settings
+baseurl = "en.q6a.com.au/"
+title = "Multilingual Websites - Your Website in Any Language"
+languageCode = "en"
+publishDir = "../docs"
+
+googleAnalytics     = "UA-115780836-1"
+
+# Meta
+[params.meta]
+author = "QBL Media"
+description = "multilingual website, multilingual website template, how to make a multilingual website, how to manage a multilingual website, website with multiple languages, how to make a website with multiple languages, how to manage a website with multiple languages, how to translate my website, how to translate my website into many languages, how to translate my content, how to manage multilingual content,"
+keywords = "multilingual website, multilingual website template, how to make a multilingual website, how to manage a multilingual website, website with multiple languages, how to make a website with multiple languages, how to manage a website with multiple languages, how to translate my website, how to translate my website into many languages, how to translate my content, how to manage multilingual content,"
+email = "hello@q6a.com.au"
+
+# Navigation
+[params.navigation]
+brand = "QBL Media"
+home = "Home"
+solutions = "Solutions"
+services = "Services"
+heuristics = "Heuristics"
+pricing = "Pricing"
+contact = "Contact Us"
+
+# Footer section
+[params.footer]
+enable = true

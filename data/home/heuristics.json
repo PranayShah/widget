@@ -1,0 +1,16 @@
+{
+  "title": "Heuristics",
+  "subtitle": "Multilingual content guidelines, multilingual asset management, and options across the translation lifecycle.",
+  "enable": true,
+  "item": [
+    {
+      "description": "<p><strong>Multilingual Content</strong></p><p><strong>Manufacturing</strong>: Provide your product information, datasheets, question and answer sections and product documentation - on your multilingual website.</p><p><strong>Services</strong>: Content is generally around availability of facilities, opening hours, and emergency contacts - optimized for multilingual search.</p><p><strong>Tourism</strong>: Templated multilingual websites, tailored on a per culture basis. Specific Chinese content over the Golden Week holiday, or Arabic content over Ramadan.</p>"
+    },
+    {
+      "description": "<p><strong>Multilingual Assets</strong></p><p><strong>Search</strong>: Multilingual All assets can have internationalised, meaning client's search in their own language, and your website is available.</p><p><strong>No workflow change</strong>: Update your website, and your multilingual website will auto-update with a time delay, depending on translator availability.</p><p><strong>Asset Lifecycle</strong>: Assets can be preserved in perpetuity or destroyed as required. Additionally, assets are deployed to a CDN on first use to increase speed.</p>"
+    },
+    {
+      "description": "<p><strong>Translation Options</strong></p><p><strong>Machine</strong>: not recommended for prospect facing content; <strong>Human</strong>: available in Standard and Pro tiers; <strong>Bring Your Own (BYO)</strong>: your subject matter expert, with an additional translation skill set;</p><p><strong>Workflow</strong>: First machine translate, then get human subject matter expert to refine the translation. Unlock value by chaining different language transforms sequentially.</p><p><strong>A/B Testing</strong>: Try multiple translations, and benchmark - how will you reach a multilingual audience?</p>"
+    }
+  ]
+}

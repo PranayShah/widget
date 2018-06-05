@@ -1,0 +1,33 @@
+<footer id="footer">
+  <a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>{{ with .Site.Data.footer.copyright }}{{ . | markdownify }}{{ end }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="item">
+          <a href="/{{ .Site.Data.footer.legal.url }}">
+            <span>{{ .Site.Data.footer.legal.title }}</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="/{{ .Site.Data.footer.sitemap.url }}">
+            <span>{{ .Site.Data.footer.sitemap.title }}</span>
+          </a>
+        </li>
+    	  {{ if ne .Site.Data.footer.login.url  " "  }}
+          <li class="item">
+            <a href="/{{ .Site.Data.footer.login.url }}">
+              <span>{{ .Site.Data.footer.login.title }}</span>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- Google Analytics -->
+{{ template "_internal/google_analytics_async.html" . }}

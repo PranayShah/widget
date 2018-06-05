@@ -1,0 +1,12 @@
+{
+  "title": "Attribution",
+  "background": "full_image_1.jpg",
+  "enable": true,
+  "item": [
+    {
+      "description": "Elate",
+      "logo": "elate.png",
+      "url": "https://github.com/saey55/hugo-elate-theme/"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "modalTitle": "Show Me",
+  "item": [
+    {
+      "lantitle": "English",
+      "desc": "",
+      "langlink": "https://en.q6a.com.au/"
+    },
+    {
+      "lantitle": "German",
+      "desc": "",
+      "langlink": "https://de.q6a.com.au/"
+    },
+    {
+      "lantitle": "Hindi",
+      "desc": "",
+      "langlink": "https://hi.q6a.com.au/"
+    },
+    {
+      "lantitle": "Korean",
+      "desc": "",
+      "langlink": "https://ko.q6a.com.au/"
+    }
+  ]
+}
