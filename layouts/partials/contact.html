@@ -45,6 +45,9 @@
             {{ end }}
           </div>
           <div class="form-group ">
+            <input class="btn btn-secondary btn-lg" value="{{ .Site.Data.home.contact.upload | markdownify }}" type="button">
+          </div>
+          <div class="form-group ">
             <input class="btn btn-primary btn-lg" value="{{ .Site.Data.home.contact.button | markdownify }}" type="submit">
           </div>
         </div>
